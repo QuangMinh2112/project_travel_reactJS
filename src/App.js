@@ -1,5 +1,8 @@
-function App() {
-  return <h1 className="App">Test Github!</h1>;
-}
+import React from "react";
+import Text from "./components/Text";
+
+const App = () => {
+  return <Text />;
+};
 
 export default App;
