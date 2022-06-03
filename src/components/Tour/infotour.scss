@@ -1,0 +1,24 @@
+.card {
+    border: none;
+    border-top: 1px solid black;
+}
+
+.card_tour {
+    flex-direction: row;
+    justify-content: center;
+}
+
+.card_name {
+    margin-top: 15px;
+}
+
+.card_image {
+    border-radius: 10px;
+}
+
+.card_btn {
+    width: 100%;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
