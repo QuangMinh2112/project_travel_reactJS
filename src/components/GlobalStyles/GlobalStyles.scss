@@ -1,0 +1,62 @@
+@import "normalize.css";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Nunito+Sans:wght@300;400;600;700&display=swap");
+
+:root {
+  --red: #fe2c55;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.6rem;
+  text-rendering: optimizeSpeed;
+}
+a {
+  text-decoration: none;
+}
+button,
+a {
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+}
+.list_tour_container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+//ListTour
+.list {
+  min-width: 100%;
+  height: auto;
+  margin: 50px 0px;
+
+  &__tour {
+    width: 100%;
+    margin: 0 auto;
+    margin: 50px 0px;
+  }
+
+  &__tour__header {
+    text-align: center;
+
+    h1 {
+      color: #ffa500;
+    }
+    p {
+      margin-top: 17px;
+      font-size: 1.4rem;
+      color: #aaa;
+    }
+  }
+}
