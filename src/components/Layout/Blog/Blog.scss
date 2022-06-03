@@ -1,0 +1,28 @@
+.blog_container {
+  width: 337px;
+  height: auto;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgb(0 0 0 / 10%);
+  margin: 10px 15px;
+}
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 25px;
+  text-transform: uppercase;
+  color: #aaa;
+}
+.thumbnail img {
+  width: 100%;
+  display: block;
+}
+.caption {
+  padding: 25px 15px;
+  line-height: 33px;
+}
+.caption a {
+  display: block;
+  padding-top: 15px;
+  color: #337ab7;
+}

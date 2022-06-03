@@ -1,0 +1,22 @@
+.btn_show_more {
+  display: flex;
+  justify-content: center;
+
+  button {
+    padding: 10px 15px;
+    background-color: #eba62d;
+    color: #fff;
+    border: none;
+    -webkit-transition: all 0.7s ease-in-out;
+    -moz-transition: all 0.7s ease-in-out;
+    -ms-transition: all 0.7s ease-in-out;
+    -o-transition: all 0.7s ease-in-out;
+    transition: all 0.85s ease-in-out;
+
+    &:hover {
+      box-shadow: 0 5px 20px rgb(14 15 18 / 30%);
+      background: #ffb636;
+      border: #ffb636;
+    }
+  }
+}
