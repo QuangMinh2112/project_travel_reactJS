@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 import "./Header.scss";
 
@@ -26,7 +26,7 @@ const Header = () => {
             <a href="">Tour Đảo</a>
           </li>
           <li>
-            <a href="">Khách Sạn</a>
+            <Link to="/products">Khách Sạn</Link>
           </li>
           <li>
             <a href="">Khuyễn Mãi</a>
