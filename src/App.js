@@ -12,6 +12,9 @@ import Subscribe from "./components/Layout/Subscribe/Subscribe";
 import InfoTour from "./components/Layout/Tour/InfoTour";
 import Login from "./components/Layout/Tour/Login";
 
+import Product from "./components/Products/Product";
+import ProductDetail from "./components/ProductDetail/ProductDetail";
+
 // import Register from "./components/Tour/Register";
 
 const App = () => {
@@ -24,6 +27,8 @@ const App = () => {
         <Route path="/details/" element={<Details />}></Route>
         <Route path="/infotour/:id" element={<InfoTour />}></Route>
         <Route path="/login/" element={<Login />}></Route>
+        <Route path="/products" element={<Product />} />
+        <Route path="/product-detail" element={<ProductDetail />} />
       </Routes>
 
       <Subscribe />

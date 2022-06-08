@@ -1,0 +1,8 @@
+.ProductDetail .ImageShow img {
+    transition: all ease-in-out 0.4s;
+}
+
+.ProductDetail .ListImage img:hover {
+    transition: all ease-in-out 0.4s;
+    transform: scale(1.1);
+}

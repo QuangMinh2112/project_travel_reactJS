@@ -1,0 +1,5 @@
+@media only screen and (max-width: 768px){
+    .head p {
+        padding-bottom: .5rem;
+    }
+}
