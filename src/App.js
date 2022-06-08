@@ -11,8 +11,7 @@ import Slider from "./components/Layout/Slider/Slider";
 import Subscribe from "./components/Layout/Subscribe/Subscribe";
 import InfoTour from "./components/Layout/Tour/InfoTour";
 import Login from "./components/Layout/Tour/Login";
-
-// import Register from "./components/Tour/Register";
+import Register from "./components/Layout/Tour/Register";
 
 const App = () => {
   return (
@@ -24,6 +23,7 @@ const App = () => {
         <Route path="/details/" element={<Details />}></Route>
         <Route path="/infotour/:id" element={<InfoTour />}></Route>
         <Route path="/login/" element={<Login />}></Route>
+        <Route path="/register/" element={<Register />}></Route>
       </Routes>
 
       <Subscribe />

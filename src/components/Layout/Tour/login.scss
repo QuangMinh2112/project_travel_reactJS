@@ -1,0 +1,141 @@
+
+.section {
+    display: flex;
+    align-items: center;
+    height: 70vh;
+    background-color: rgb(240, 221, 194);
+}
+.aside {
+    border-right: 2px dotted gray;
+    width: 30%;
+    text-align: center;
+    color: #0b796e;
+    line-height: 3rem;
+}
+
+.main {
+    width: 70%;
+    text-align: center;
+    line-height: 2rem;
+}
+
+.main h3 {
+    color: #0b796e;
+    font-size: 2rem;
+}
+
+#login {
+    line-height: 2rem;
+}
+
+#login input {
+    border: 1px solid #0b796e;
+    border-radius: 2rem;
+    width: 31rem;
+    height: 5rem;
+    padding-left: 1.2rem;
+    margin: 0.6rem;
+}
+
+#login button {
+    border: 1px solid #0b796e;
+    border-radius: 2rem;
+    width: 31.2rem;
+    height: 50px;
+    background-color: #0b796e;
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin: 0.6rem;
+}
+
+#login button:hover {
+    background-color: #0f8579;
+    font-weight: bold;
+    color: black;
+}
+
+.main a {
+    color:gray; 
+    font-weight:bold;
+}
+
+.main p a:hover {
+    color: red;
+}
+
+#error {
+    color: red;
+}
+
+//Responsive
+@media screen and (max-width: 1024px) {
+    .main {
+        line-height: 1rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+      #login input {   
+        width: 20rem;
+    }
+    #login button { 
+        width: 21.2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .section {
+        flex-direction: column;
+    }
+    .aside {
+        border: none;
+        width: 100vw;
+        line-height: 2rem;
+    }
+    .main {
+        line-height: 0.1rem;
+        width: 100vw;
+    }
+    #login input {
+        width: 15rem;
+    }   
+    #login button {
+        width: 16.2rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .section.responsive {
+        flex-direction: column;
+        height: 65vh;
+    }
+    .aside {
+        border: none;
+        width: 100vw;
+        line-height: 2rem;
+    }
+    .aside h1 {
+        font-size: 1.5rem;
+    }
+    .main {
+        line-height: 0.1rem;
+        width: 100vw;
+        font-size: 0.8rem;
+    }
+    .main h3 {
+        font-size: 1.5rem;
+    }
+    #login input {
+        width: 15rem;
+        height: 2rem;
+    }   
+    #login button {
+        width: 16.2rem;
+        height: 2rem;
+    }
+}
+
+
+
+
+
