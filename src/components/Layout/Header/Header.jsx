@@ -15,6 +15,8 @@ const Header = () => {
     height: undefined,
   });
 
+  const loginSucces = localStorage.getItem("loginSucces");
+
   useEffect(() => {
     const handleResize = () => {
       setSize({
@@ -72,9 +74,15 @@ const Header = () => {
               <a href="#">Khách sạn</a>
             </li>
           </ul>
-          <NavLink to="/login">
-            <button className="btn-login">Login</button>
-          </NavLink>
+          {loginSucces ? (
+            <NavLink to="/login">
+              <button className="btn-login">Logout</button>
+            </NavLink>
+          ) : (
+            <NavLink to="/login">
+              <button className="btn-login">Login</button>
+            </NavLink>
+          )}
         </nav>
         <div className={classes.header__content__toggle}>
           {!menuOpen ? (

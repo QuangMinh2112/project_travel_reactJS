@@ -28,6 +28,9 @@ const InfoTour = () => {
   const input3 = useInput();
 
   const [tourDetail, setTourDetail] = useState({});
+  // const [numberInput1, setNumberInput1] = useState("");
+  // const [numberInput2, setNumberInput2] = useState("");
+  // const [numberInput3, setNumberInput3] = useState("");
 
   const [total, setTotal] = useState(0);
   //Phần chuyển đổi số
@@ -286,6 +289,12 @@ const InfoTour = () => {
       <Row className="mt-2">
         {tourDetail.content ? ReactHtmlParser(tourDetail.content) : ""}
       </Row>
+      <div
+        class="fb-comments"
+        data-href="https://developers.facebook.com/docs/plugins/comments#configurator"
+        data-width=""
+        data-numposts="5"
+      ></div>
     </Container>
   );
 };
