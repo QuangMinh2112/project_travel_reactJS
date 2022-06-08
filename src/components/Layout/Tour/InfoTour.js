@@ -28,9 +28,9 @@ const InfoTour = () => {
   const input3 = useInput();
 
   const [tourDetail, setTourDetail] = useState({});
-  const [numberInput1, setNumberInput1] = useState("");
-  const [numberInput2, setNumberInput2] = useState("");
-  const [numberInput3, setNumberInput3] = useState("");
+  // const [numberInput1, setNumberInput1] = useState("");
+  // const [numberInput2, setNumberInput2] = useState("");
+  // const [numberInput3, setNumberInput3] = useState("");
 
   const [total, setTotal] = useState(0);
   //Phần chuyển đổi số
