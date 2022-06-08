@@ -60,3 +60,17 @@ ul {
     }
   }
 }
+@media (max-width: 500px) {
+  .experience {
+    margin-top: 88px;
+  }
+}
+
+@media (max-width: 700px) {
+  .experience {
+    margin-top: 88px;
+  }
+  .box_2 {
+    flex-direction: column;
+  }
+}
