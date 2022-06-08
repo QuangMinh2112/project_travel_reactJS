@@ -25,7 +25,7 @@ const Slider = () => {
   ];
   return (
     <div className="content">
-      <div id="slider">
+      <div id="slider" className="clearfix">
         <div className="owl-carousel owl-theme">
           <div className="slide slide-1">
             <div className="slide-content"></div>
@@ -40,7 +40,7 @@ const Slider = () => {
       </div>
 
       <div className="service">
-        <div className="container">
+        <div className="container_service">
           {mainService.map((item, index) => {
             return (
               <div className="service_box" key={index}>
@@ -65,7 +65,7 @@ const Slider = () => {
             </p>
           </div>
           <div className="experience_container_images">
-            <div className="container">
+            <div className="container_box">
               <div className="gallery-container w-3 h-2">
                 <div className="gallery-item">
                   <div className="image">

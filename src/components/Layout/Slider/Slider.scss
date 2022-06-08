@@ -6,7 +6,10 @@
   width: 100%;
   height: 100vh;
 }
-
+#slider {
+  width: 100%;
+  height: 100vh;
+}
 .slide {
   width: 100%;
   height: 100vh;
@@ -124,7 +127,7 @@
   height: 30vh;
 }
 .service {
-  .container {
+  .container_service {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -190,7 +193,7 @@
 //     color: #aaa;
 //   }
 // }
-.container {
+.container_box {
   display: grid;
   margin: 20px;
   padding: 0;
@@ -310,4 +313,12 @@
   100% {
     top: 50%;
   }
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
 }

@@ -1,14 +1,27 @@
 import React, { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
+import InfoTour from "../Tour/InfoTour";
 import "./ListTour.scss";
 
-const ListTour = ({ id, title, num_order, address, price, image }) => {
+const ListTour = ({ id, name, num_order, address, price, image }) => {
   //formatter price
   var formatter = new Intl.NumberFormat("vi", {
     style: "currency",
     currency: "VND",
   });
   const navigate = useNavigate();
+
+  // const handleBookNow = () => {
+  //   const getDataTour = {
+  //     id,
+  //     name,
+  //     image,
+  //     address,
+  //     price,
+  //     num_order,
+  //   };
+  //   console.log(getDataTour);
+  // };
 
   return (
     <>
@@ -18,7 +31,7 @@ const ListTour = ({ id, title, num_order, address, price, image }) => {
         </div>
         <div className="tour_info">
           <div className="tour_container">
-            <h1>{title}</h1>
+            <h1>{name}</h1>
             <span>
               5 <i className="fa-solid fa-star" /> | {num_order} Đã đặt
             </span>
@@ -34,7 +47,9 @@ const ListTour = ({ id, title, num_order, address, price, image }) => {
             </p>
           </div>
           <div className="book_now">
-            <button>Đặt ngay</button>
+            <NavLink to={`./infotour/${id}`}>
+              <button>Đặt ngay</button>
+            </NavLink>
             <span className="price">{formatter.format(price)}</span>
           </div>
           <div className="number">
